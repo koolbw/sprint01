@@ -1,9 +1,11 @@
 import java.util.Scanner
 
+//Initializing the map needed to store the moves on the board
 val theBoard: MutableMap<Int, Char> = mutableMapOf(1 to ' ', 2 to ' ', 3 to ' ', 4  to ' ', 5 to ' ', 6 to ' ', 7 to ' ', 8 to ' ', 9 to ' ')
 
 fun main() {
 
+   //Initializing the variables for the game
    var turn = 'X'
    var count = 0
    val reader = Scanner(System.`in`)
@@ -29,6 +31,8 @@ fun main() {
       //   println("$square")
 
          if (count >= 5) {
+
+            //Grab the values for the board
             val one = theBoard[1]
             val two = theBoard[2]
             val three = theBoard[3]
@@ -39,57 +43,59 @@ fun main() {
             val eight = theBoard[8]
             val nine = theBoard[9]
 
+            //We will now check for the winner
+
             //Across the top
-            if (seven != ' ' && eight != ' ' && nine != ' ') {
+            if (seven == eight && eight == nine && seven != ' ') {
                printBoard()
                println("Game Over.")
                println("**** $turn won. ****")
                break
             }
             //Across the middle
-            else if (four != ' ' && five != ' ' && six != ' ') {
+            else if (four == five && five == six) {
                printBoard()
                println("Game Over.")
                println("**** $turn won. ****")
                break
             }
             //Across the bottom
-            else if (one != ' ' && two != ' ' && three != ' ') {
+            else if (one == two && two == three) {
                printBoard()
                println("Game Over.")
                println("**** $turn won. ****")
                break
             }
             //Down the left
-            else if (seven != ' ' && four != ' ' && one != ' ') {
+            else if (one == four && four == seven) {
                printBoard()
                println("Game Over.")
                println("**** $turn won. ****")
                break
             }
             //Down the middle
-            else if (eight != ' ' && five != ' ' && two != ' ') {
+            else if (two == five && five == eight) {
                printBoard()
                println("Game Over.")
                println("**** $turn won. ****")
                break
             }
             //Down the right
-            else if (nine != ' ' && six != ' ' && three != ' ') {
+            else if (three == six && six == nine) {
                printBoard()
                println("Game Over.")
                println("**** $turn won. ****")
                break
             }
             //Diagonal
-            else if (seven != ' ' && five != ' ' && three != ' ') {
+            else if (seven == five && five == three) {
                printBoard()
                println("Game Over.")
                println("**** $turn won. ****")
                break
             }
             //Diagonal
-            else if (one != ' ' && five != ' ' && nine != ' ') {
+            else if (one == five && five == nine) {
                printBoard()
                println("Game Over.")
                println("**** $turn won. ****")
@@ -97,13 +103,17 @@ fun main() {
             }
          }
 
+         //If the board is filled it will end the game
          if (count == 9) {
             println("Game Over.")
             println("It's a Tie!!")
+            break
          }
 
       //   printBoard()
 
+
+        //Switches between players
         if (turn == 'X') {
            turn = 'O'
         }
