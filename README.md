@@ -1,10 +1,6 @@
-# Overview
+# Tic-Tac-Toe with Kotlin
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
-
-{Provide a description the software that you wrote to demonstrate the Kotlin language.}
-
-{Describe your purpose for writing this software.}
+The purpose of this project was for me to be able to learn the basics of Kotlin. I re-wrote this simple tic-tac-toe program that was originally written in Python.
 
 {Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running and a walkthrough of the code.  Focus should be on sharing what you learned about the language syntax.}
 
@@ -12,19 +8,21 @@
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
-
-{Describe the programming language that you used and any libraries.}
+While working on this project I used the following:
+* VS Code
+* Kotlin
+* The "java.util.Scanner" library
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+These are the two main websites that I used to learn Kotlin and to troubleshoot my code. 
+
+* [Programiz](https://www.programiz.com/kotlin-programming)
+* [Kotlin Web Site](https://kotlinlang.org/docs/home.html)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+These are some things that I could probably fix in the future if I had more time to work on the code or if I wanted to expand on the program.
+
+* I would make it an option to restart the game witout re-running the program
+* I would go back and make it more efficient when it checks for the winner
