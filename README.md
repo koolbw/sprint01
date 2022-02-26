@@ -2,7 +2,7 @@
 
 The purpose of this project was for me to be able to learn the basics of Kotlin. I re-wrote this simple tic-tac-toe program that was originally written in Python.
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running and a walkthrough of the code.  Focus should be on sharing what you learned about the language syntax.}
+Some of the things that I learned while writing this program were differnces in how you store information in Kotlin compared to Python. In my original Python version of this program I used a dictionary to store all the values but in Kotlin there are no dictionaries. Instead I had to use a map to store the moves made on the board by the players. 
 
 [Software Demo Video](http://youtube.link.goes.here)
 
